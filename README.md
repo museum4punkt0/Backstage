@@ -30,13 +30,16 @@ Senckenberg Museum für Naturkunde Görlitz - Backstage
   - [Lizenz](#lizenz)
     - [Proprietäre Drittanbieter Software](#proprietäre-drittanbieter-software)
     - [Drittanbieter Lizenzen](#drittanbieter-lizenzen)
-  - [Förderungen](#förderungen)
+ 
 
 ## Kurzbeschreibung
 
 "Backstage" ist ein Multimediasystem des Senckenberg Museum Görlitz bestehend aus einem physischen, freistehenden Regal in das fünf Bildschirme eingelassen sind. Vier dieser Bildschirme dienen als interaktive Terminals (Stationen). An diesen Stationen können Besucher eigenständig und unabhängig voneinander audiovisuelle Medieninhalte (Bilder, Videos und 3D Modelle) zu den Themen Sammeln, Dokumentieren, Präparieren, Archivieren und Forschen entdecken und betrachten. Die Installation versucht dabei dem Besucher einen Überblick und breitgefächertes Verständnis für die Arbeit mit einer wissenschaftlichen Sammlung in all ihren Aspekten zu vermitteln. Zusätzlich zum individuellen Erkunden der Inhalte kann das Multimediasystem in einem moderierten Modus betrieben werden mit dem alle Stationen synchronisiert werden um die Inhalte z.B. im Rahmen einer Führung zu präsentieren.
 
 Dieses Multimediasystem ist entstanden im Verbundprojekt _museum4punkt0 – Digitale Strategien für das Museum der Zukunft_, Teilprojekt "Forschung in Museen erklären, verstehen, mitmachen". Das Projekt museum4punkt0 wird gefördert durch die Beauftragte der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages. [Weitere Informationen](https://www.museum4punkt0.de)
+
+![BKM-Logo](https://github.com/museum4punkt0/Object-by-Object/blob/77bba25aa5a7f9948d4fd6f0b59f5bfb56ae89e2/04%20Logos/BKM_Fz_2017_Web_de.gif)
+![NeustartKultur](https://github.com/museum4punkt0/Object-by-Object/blob/22f4e86d4d213c87afdba45454bf62f4253cada1/04%20Logos/BKM_Neustart_Kultur_Wortmarke_pos_RGB_RZ_web.jpg)
 
 ## Installation
 ![flowchart](assets/exploratorium-flowchart.svg)
@@ -236,7 +239,3 @@ Das Multimediasystem wurde unter Verwendung der folgenden Freien Open Source Sof
 - .NET System.Threading [MICROSOFT SOFTWARE LICENSE TERMS](https://dotnet.microsoft.com/en-us/dotnet_library_license.htm)
 - .NET System.Threading.Tasks.Extensions [MIT License](https://github.com/dotnet/corefx/blob/master/LICENSE.TXT)
 - .NET System.IO.Compression.ZipFile [MICROSOFT SOFTWARE LICENSE TERMS](https://dotnet.microsoft.com/en-us/dotnet_library_license.htm)
-
-## Förderungen
-![BKM-Logo](https://github.com/museum4punkt0/Object-by-Object/blob/77bba25aa5a7f9948d4fd6f0b59f5bfb56ae89e2/04%20Logos/BKM_Fz_2017_Web_de.gif)
-![NeustartKultur](https://github.com/museum4punkt0/Object-by-Object/blob/22f4e86d4d213c87afdba45454bf62f4253cada1/04%20Logos/BKM_Neustart_Kultur_Wortmarke_pos_RGB_RZ_web.jpg)
