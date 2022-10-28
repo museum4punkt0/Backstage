@@ -1,0 +1,36 @@
+services:
+  db:
+    networks:
+      - directus-database
+
+  directus:
+    environment:
+      PUBLIC_URL: https://${HOSTNAME:-/}
+    networks:
+      - directus-database
+      - directus-proxy
+
+  proxy:
+    image: caddy:2
+    restart: ${RESTART_POLICY:-no}
+    command: "caddy reverse-proxy --from ${HOSTNAME} --to http://directus:8055"
+    ports:
+      - ${PROXY_HTTP_PORT:-80}:80
+      - ${PROXY_HTTPS_PORT:-443}:443
+    networks:
+      - directus-proxy
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+
+  #cache:
+  #  networks:
+  #    - directus-database
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  directus-proxy:
+  directus-database:

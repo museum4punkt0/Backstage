@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fdbbdbe4268c4d729a51bde5e681e8c, type: 3}
+  m_Name: Directus.BaseUrl
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: 73989414-1528-4882-aafc-17603f7d4195
+  _value: https://skbg-cms.m-box.tv
+  _changed: {fileID: 11400000, guid: 01c6bfc9626987a45b4095f04bff13f6, type: 2}
+  _changedWithHistory: {fileID: 0}
+  _triggerChangedOnOnEnable: 0
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue: https://skbg-cms.m-box.tv
+  _initialValue: https://skbg.m-box.tv
+  _preChangeTransformers: []

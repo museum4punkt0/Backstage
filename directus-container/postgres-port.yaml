@@ -1,0 +1,4 @@
+services:
+  db:
+    ports:
+      - ${DATABASE_PUBLIC_PORT:-127.0.0.1:5432}:5432

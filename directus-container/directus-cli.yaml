@@ -1,0 +1,11 @@
+services:
+  cli:
+    image: mboxberlin/directus-cli:${DIRECTUS_CLI_VERSION:-latest}
+    environment:
+      DIRECTUS_API_ENDPOINT: ${DIRECTUS_CLI_ENDPOINT:-http://directus:8055}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-user@example.com}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-directus}
+      DIRECTUS_CLI_BASEDIR: /directus-data
+      DIRECTUS_CLI_INIT_ACTIONS: ${DIRECTUS_CLI_INIT_ACTIONS:-import-model import-settings import-assets import-items}
+    volumes:
+      - ${DIRECTUS_CLI_BASEDIR:-../directus-data}:/directus-data:Z

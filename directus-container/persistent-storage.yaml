@@ -1,0 +1,10 @@
+services:
+  directus:
+    volumes:
+      - ./directus/uploads:/directus/uploads
+  db:
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  db:

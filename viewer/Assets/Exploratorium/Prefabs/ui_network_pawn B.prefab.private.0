@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8043461525322306509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 649237823210891979}
+  - component: {fileID: 603728400546330501}
+  - component: {fileID: 2467501073991945368}
+  - component: {fileID: -4779268472414924467}
+  m_Layer: 0
+  m_Name: ui_network_pawn B
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &649237823210891979
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043461525322306509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 111, y: 111}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &603728400546330501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043461525322306509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 951099334
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &2467501073991945368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043461525322306509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555cf018da60e844a8cc030ae83bda49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedEvent: {fileID: 11400000, guid: 706c78e2bfdea184e81d5d4dd4a5c62f, type: 2}
+  deSpawningEvent: {fileID: 11400000, guid: b0cc104492b68a84eb40046c71d132a6, type: 2}
+  reqSoloEvent: {fileID: 11400000, guid: b4f6efad5b2f63a428e6c6785dc38eca, type: 2}
+  reqControlEvent: {fileID: 11400000, guid: 843c16a5b8a443d46be9ba3330aa948d, type: 2}
+  reqVObsEvent: {fileID: 11400000, guid: 7549aac2fc8504542a5948412a6419a5, type: 2}
+  reqHObsEvent: {fileID: 11400000, guid: 9b1239c1d915f0e47b6e53bc8f38fe2f, type: 2}
+  flowReportEvent: {fileID: 11400000, guid: fcbb890dbae005c41b5809fa4c3d1a83, type: 2}
+  videoTimeReportEvent: {fileID: 11400000, guid: 1a54b397379c1454d8bdd09bfc53b601, type: 2}
+  videoPlayReportEvent: {fileID: 11400000, guid: 3edeea25632b6b14f8628c057480f05c, type: 2}
+  slideshowTimeReportEvent: {fileID: 11400000, guid: 3f887927f78f82446aed551c875b5f57, type: 2}
+  slideshowPosReportEvent: {fileID: 11400000, guid: d35b36e9949e7b0479b72cfa43519f34, type: 2}
+  slideshowFullscreenReportEvent: {fileID: 11400000, guid: e4cb4dd6ffa26d942931dc7d18f7f2ce, type: 2}
+  slideshowInfoReportEvent: {fileID: 11400000, guid: 892259dcfbe665045b35eabf2140cf52, type: 2}
+  modelIndexReportEvent: {fileID: 11400000, guid: 7ace69909fbff3b43a3d4495e3eee351, type: 2}
+  modelPosReportEvent: {fileID: 11400000, guid: fd91623d462c7ab40b834625211c3f07, type: 2}
+  modelFullscreenReportEvent: {fileID: 11400000, guid: 9a647e6aafe0ae3448923b128caff9f9, type: 2}
+  modelInfoReportEvent: {fileID: 11400000, guid: b29c3726f5b6bd14c8bb59f894134b11, type: 2}
+  flowSyncEvent: {fileID: 11400000, guid: 28ee1e4e398ddee4baaf849b354ab083, type: 2}
+  controllerHeartbeat: {fileID: 11400000, guid: 7025920c293442f41bc5c7089ae3fa12, type: 2}
+  roleVariable: {fileID: 11400000, guid: fbdc8506f83bb124e8f881698b25112f, type: 2}
+  videoTimeSyncEvent: {fileID: 11400000, guid: e250df20fc739d542b30880813dba3f3, type: 2}
+  videoPlaySyncEvent: {fileID: 11400000, guid: 06a5edc1fed9be64cb55327c0d0096e1, type: 2}
+  slideshowPosSyncEvent: {fileID: 11400000, guid: 746344f6ce3bc5443bbeb59d8166ef5c, type: 2}
+  slideshowTimeSyncEvent: {fileID: 11400000, guid: 4c8692049bb95d445a399692aeae0c24, type: 2}
+  slideshowFullscreenSyncEvent: {fileID: 11400000, guid: 82dff0ee8a61000458e0f1bb7bdcc2aa, type: 2}
+  slideshowInfoSyncEvent: {fileID: 11400000, guid: 1083223b51fe2a740b118f936d5e6ae0, type: 2}
+  modelFullscreenSyncEvent: {fileID: 11400000, guid: a113520a6a0f49147bdb5b8cdc1f3089, type: 2}
+  modelInfoSyncEvent: {fileID: 11400000, guid: 49c5706ce913228488ffcd70e8f768a2, type: 2}
+  modelPosSyncEvent: {fileID: 11400000, guid: f81696c6fe89163488229c344715e5fc, type: 2}
+  modelIndexSyncEvent: {fileID: 11400000, guid: de6b936c49eda9b44b3a0b4718f27681, type: 2}
+--- !u!114 &-4779268472414924467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043461525322306509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e010a3e3e31548cca51ca72c5faa6e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pawn: {fileID: 2467501073991945368}
+  onlineState: {fileID: 0}

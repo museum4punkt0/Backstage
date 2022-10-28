@@ -1,0 +1,42 @@
+# Use this proxy in place of reverse proxy
+# if you run directus from a non-public host
+#
+# run bin/gen-nginx-certs to generate the certs
+# use local IP address as common name
+
+services:
+  db:
+    networks:
+      - directus-database
+
+  directus:
+    environment:
+      PUBLIC_URL: /
+    networks:
+      - directus-database
+      - directus-proxy
+
+  proxy:
+    image: nginx
+    depends_on:
+      - directus
+    restart: ${RESTART_POLICY:-no}
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - directus-proxy
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d:ro
+
+ #cache:
+  #  networks:
+  #    - directus-database
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  directus-proxy:
+  directus-database:

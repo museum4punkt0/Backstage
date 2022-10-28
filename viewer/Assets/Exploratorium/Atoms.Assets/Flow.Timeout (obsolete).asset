@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b46c0f62c93543f88d3eb693740d091, type: 3}
+  m_Name: Flow.Timeout (obsolete)
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _id: c1fe0919-4cb9-4dc8-a11e-65387891fa70
+  _value: 0
+  _changed: {fileID: 11400000, guid: 20540e294ff7f0c4ca81be2e6d53d233, type: 2}
+  _changedWithHistory: {fileID: 0}
+  _triggerChangedOnOnEnable: 0
+  _triggerChangedWithHistoryOnOnEnable: 0
+  _oldValue: 0
+  _initialValue: 0
+  _preChangeTransformers: []

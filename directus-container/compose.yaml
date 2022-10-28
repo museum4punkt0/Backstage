@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:12
+    restart: ${RESTART_POLICY:-no}
+    volumes:
+      - ./db-init/db.sql:/docker-entrypoint-initdb.d/0-init.sql
+    environment:
+      POSTGRES_USER: ${DATABASE_USER:-directus}
+      POSTGRES_PASSWORD: ${DATABASE_PWD:-directus}
+      POSTGRES_DB: ${DATABASE_NAME:-directus}
+
+  directus:
+    image: directus/directus:${DIRECTUS_TAG:-9.0.0-rc.85}
+    restart: ${RESTART_POLICY:-no}
+    volumes:
+      - ./directus/extensions:/directus/extensions
+    ports:
+      - ${DIRECTUS_PUBLIC_PORT:-127.0.0.1:8055}:8055
+    depends_on:
+      - db
+    environment:
+      KEY: ${DIRECTUS_KEY:-directus}
+      SECRET: ${DIRECTUS_SECRET:-directus}
+      ADMIN_EMAIL: ${DIRECTUS_ADMIN_EMAIL:-user@example.com}
+      ADMIN_PASSWORD: ${DIRECTUS_ADMIN_PASSWORD:-directus}
+      PUBLIC_URL: ${DIRECTUS_PUBLIC_URL:-/}
+      LOG_LEVEL: ${DIRECTUS_LOG_LEVEL:-info}
+      DB_CLIENT: pg
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_DATABASE: ${DATABASE_NAME:-directus}
+      DB_USER: ${DATABASE_USER:-directus}
+      DB_PASSWORD: ${DATABASE_PWD:-directus}

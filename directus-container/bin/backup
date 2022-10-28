@@ -1,0 +1,21 @@
+#!/bin/bash
+
+BACKUP_TARGET=/backup
+
+cd $(dirname $0)/..
+
+docker-compose exec -T db \
+    pg_dump \
+        --clean \
+        --if-exists \
+        --user=directus \
+        --column-inserts \
+        --format=plain \
+        --dbname=directus \
+        --exclude-table-data=directus_activity \
+        --exclude-table-data=directus_revisions \
+        --file=/docker-entrypoint-initdb.d/0-init.sql
+
+tar czf $BACKUP_TARGET/directus-$(date +%s).tgz directus/uploads db-init/db.sql .env
+
+find ${BACKUP_TARGET} -name *.tgz -mtime +10 -type f -delete

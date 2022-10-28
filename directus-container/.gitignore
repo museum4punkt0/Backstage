@@ -1,0 +1,6 @@
+.env
+/db/
+/tmp/
+/.idea/datasources/**
+extensions-dev
+**/node_modules/

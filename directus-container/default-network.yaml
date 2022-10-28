@@ -1,0 +1,10 @@
+services:
+  directus:
+    networks:
+      - default
+  db:
+    networks:
+      - default
+
+networks:
+  default:
