@@ -6,9 +6,6 @@ Senckenberg Backstage
 
 ## Inhaltsverzeichnis
 
-- [Backstage](#backstage)
-  - [Name der Anwendung](#name-der-anwendung)
-  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Kurzbeschreibung](#kurzbeschreibung)
   - [Installation](#installation)
     - [Installation Viewer-App](#installation-viewer-app)
